@@ -5,7 +5,7 @@
 </template>
 
 <script> 
-	import Skill from './Skill';
+	import Skill from '../widget/Skill';
 
 	export default {
 		name: "Home",

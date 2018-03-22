@@ -23,7 +23,7 @@
 </template>
 
 <script>
-    import SkillBtn from '../widget/SkillBtn';
+    import SkillBtn from './SkillBtn';
     import {Button, Row, Col} from 'iview'
     let l = [
         {href: '/react', text: 'React'},
