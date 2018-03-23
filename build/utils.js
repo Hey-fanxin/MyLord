@@ -22,6 +22,13 @@ exports.cssLoaders = function (options) {
     }
   }
 
+  const lessLoader = {
+    loader: 'less-loader',
+    options: {
+      sourceMap: options.sourceMap
+    }
+  }
+
   const postcssLoader = {
     loader: 'postcss-loader',
     options: {

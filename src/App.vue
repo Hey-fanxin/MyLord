@@ -2,10 +2,10 @@
     <div class="layout" id="app">
         <Layout>
             <HeaderBar></HeaderBar>
-            <Content :style="{margin: '88px 20px 0', background: '#fff', minHeight: '500px'}">
+            <Content class="layout-conent">
                 <router-view/>
             </Content>
-            <Footer class="layout-footer-center">2011-2016 &copy; TalkingData</Footer>
+            <Footer class="layout-footer-center">2015-2018 &copy; My Resume Data</Footer>
         </Layout>
     </div>
 </template>
@@ -37,7 +37,12 @@
         border-radius: 4px;
         overflow: hidden;
     }
-    
+    .layout-conent{
+        padding-top:60px;
+        height: 94vh;
+        background: #fff;
+        box-sizing: border-box;
+    }
     .layout-footer-center{
         text-align: center;
     }

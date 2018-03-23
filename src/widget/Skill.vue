@@ -63,9 +63,9 @@
             },
         },
         components:{
-            [SkillBtn.name]: SkillBtn,
-            [Button.name]: Button,
-            [Row.name]: Row,
+            SkillBtn,
+            Button,
+            Row,
             [Col.name]: Col,
         }
     }
