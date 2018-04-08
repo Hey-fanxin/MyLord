@@ -36,8 +36,8 @@
                     {href: '/', text: 'Home', isActive: false},
                     {href: '/works', text: 'Works', isActive: false},
                     {href: '/resume', text: 'Resume', isActive: false},
-                    {href: '/email', text: 'email-unread', isActive: false, icon: true},
-                    {href: '/admin', text: 'happy', isActive: false, icon: true},
+                    {href: '/collect', text: 'at', isActive: false, icon: true},
+                    {href: '/login', text: 'happy', isActive: false, icon: true},
                 ]
             }
         },

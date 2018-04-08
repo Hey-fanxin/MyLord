@@ -3,8 +3,11 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import {Message, Modal} from 'iview'
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
+Vue.prototype.$Message = Message
+Vue.prototype.$Modal = Modal
 
 import 'iview/dist/styles/iview.css';
 /* eslint-disable no-new */

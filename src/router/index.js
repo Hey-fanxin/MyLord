@@ -4,8 +4,10 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 import Works from '@/components/Works'
 import Resume from '@/components/Resume'
-import Email from '@/components/Email'
+import Collect from '@/components/Collect'
 import Admin from '@/components/Admin'
+import Login from '@/components/Login'
+import NotFoundComponent from '@/components/NotFoundComponent'
 
 Vue.use(Router)
 
@@ -28,14 +30,24 @@ export default new Router({
             component: Resume
         },
         {
-            path: '/email',
-            name: 'Email',
-            component: Email
+            path: '/collect',
+            name: 'Collect',
+            component: Collect
+        },
+        {
+            path: '/login',
+            name: 'Login',
+            component: Login
         },
         {
             path: '/admin',
             name: 'Admin',
             component: Admin
+        },
+        { 
+            path: '*',
+            name: 'NotFoundComponent',
+            component: NotFoundComponent 
         }
     ]
 })
