@@ -54,7 +54,7 @@
                     },
                     {
                         title: 'Time',
-                        key: 'datetime',
+                        key: 'creattime',
                         sortable: true
                     },
                     {
@@ -152,7 +152,7 @@
             show (index) {
                 this.$Modal.info({
                     title: 'User Info',
-                    content: `Name：${this.leaveData[index].username}<br>Time：${this.leaveData[index].datetime}<br>Address：${this.leaveData[index].content}`
+                    content: `Name：${this.leaveData[index].username}<br>Time：${this.leaveData[index].creattime}<br>Address：${this.leaveData[index].content}`
                 })
             },
             remove (index) {

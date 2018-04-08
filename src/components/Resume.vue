@@ -63,7 +63,7 @@
                             
                         }).then((result) => {
                             console.log(result)
-                            if(result.data == '1'){
+                            if(result.data.ok == 1){
                                 this.$Message.success('添加成功');
                                 this.handleReset('formValidate')
                             }else{
