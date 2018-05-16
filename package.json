@@ -1,5 +1,5 @@
 {
-  "name": "MyLord",
+  "name": "mylord",
   "version": "1.0.0",
   "description": "A Vue.js project",
   "author": "边军平 <bianjunping@limefamily.com>",
@@ -12,6 +12,8 @@
   "dependencies": {
     "axios": "^0.18.0",
     "iview": "^2.9.2",
+    "jquery": "^2.2.3",
+    "js-cookie": "^2.2.0",
     "lodash": "^4.17.5",
     "moment": "^2.22.0",
     "vue": "^2.5.2",

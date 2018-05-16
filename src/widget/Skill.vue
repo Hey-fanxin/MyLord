@@ -44,19 +44,18 @@
 
         data(){
             return {
-                is: true,
-                skillL: l,
-                skillR: r
+                isShow: false,
+                skillL: [],
+                skillR: [],
             }
         },
         methods:{
             skillClick: function(){
-                if(this.is){
-                    this.is = false;
-                    this.skillL = this.skillR = [{}]
+                if(this.isShow){
+                    this.isShow = false;
+                    this.skillL = this.skillR = [];
                 }else{
-                    console.log(l)
-                    this.is = true;
+                    this.isShow = true;
                     this.skillL = l;
                     this.skillR = r;
                 }
@@ -73,9 +72,15 @@
 
 <style scoped>
     .skill-box{
+        height:410px;
         margin-top: 50px;
+        overflow: hidden;
+    }
+    .skill-l,.skill-r{
+        height:400px;
     }
     .skill-l>ul>li, .skill-r>ul>li{
+        list-style: none;
         margin-bottom:30px;
         text-align: center;
     }

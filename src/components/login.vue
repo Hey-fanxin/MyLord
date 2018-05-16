@@ -5,6 +5,7 @@
                 <p slot="title">
                     <Icon type="log-in"></Icon>
                     欢迎登录
+                    <a class="register" href='/register'>sing up</a>
                 </p>
                 <div class="form-con">
                     <Form ref="loginForm" :model="form" :rules="rules">
@@ -35,9 +36,9 @@
 <script>
     import {Input, Button, Form, FormItem, Buttom, Icon, Card} from 'iview';
     import axios from 'axios';
-
+    import Cookies from 'js-cookie';
     export default {
-        name: 'Admin',
+        name: 'Login',
         data () {
             return {
                 validErr: "",
@@ -65,14 +66,14 @@
                             "username": this.form.userName,
                             "password": this.form.password,
                         }).then((res) => {
-                            console.log(res)
                             if(res.data == -1){
                                 this.validErr = ' ';
                                 this.$Message.error('Without this user！');
                             }else if(res.data == -2){
                                 this.validErr = ' ';
                                 this.$Message.error('Password mistake！');
-                            }else{
+                            }else if(res.data.state == 1){
+                                Cookies.set('name',res.data.name);
                                 this.$router.push({
                                     path: '/admin',
                                     name: 'Admin'
@@ -89,7 +90,7 @@
             Icon,
             Button,
             Input,
-            [FormItem.name]: FormItem,
+            FormItem,
         }
     }
 </script>
@@ -121,6 +122,9 @@
             text-align: center;
             color: #c3c3c3;
         }
+    }
+    .register{
+        float: right;
     }
 }
 </style>
